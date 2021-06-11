@@ -1,0 +1,35 @@
+h1 {
+    padding: 0.8em 0.8em 0em 0.8em;
+    font-size: 45px;
+}
+
+.services {
+    padding: 0.5em 0;
+}
+
+.serviceForm {
+    font-size: 25px;
+}
+
+.serviceRequests {
+    font-size: 25px;
+    margin-left: 1.1em;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 35em 0.5em 1.3em;
+}
+
+.field input {
+    font-size: 26px;
+}
+
+.button {
+    margin: 2em 1.25em 1.25em 1.22em;
+    padding: 0.5rem;
+    background-color: rgb(43, 96, 105);
+    color: whitesmoke;
+    font-size: 1em;
+}
