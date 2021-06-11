@@ -1,3 +1,29 @@
+import { sendRequest } from "./dataAccess.js";
+
+//As user types into form fields and changes state of the app, this transient state is converted into permanent state by storing it in the 
+//database.json file via the POST fetch call/sendRequest() fxn as illustrated below:
+const mainContainer = document.querySelector("#container");
+
+mainContainer.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "submitRequest") {
+        // Get what the user typed into the form fields
+        const userDescription = document.querySelector("input[name='serviceDescription']").value
+        const userAddress = document.querySelector("input[name='serviceAddress']").value
+        const userBudget = document.querySelector("input[name='serviceBudget']").value
+        const userDate = document.querySelector("input[name='serviceDate']").value
+
+        // Make an object out of the user input
+        const dataToSendToAPI = {
+            description: userDescription,
+            address: userAddress,
+            budget: userBudget,
+            neededBy: userDate
+        };
+
+        // Send the data to the API for permanent storage
+        sendRequest(dataToSendToAPI);
+    };
+});
 
 
 

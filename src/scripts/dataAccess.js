@@ -25,7 +25,8 @@ export const fetchRequests = () => {
 
 export const getRequests = () => [...applicationState.requests];
 
-//HTTP POST(create something new) Request with Fetch:
+//HTTP POST(create something new) Request with Fetch; the POST fetch call will dispatch the stateChanged custom event after the POST operation
+//is completed; every time state changes, you have to generate new HTML representations of the state
 
 export const sendRequest = (userServiceRequest) => {
     const fetchOptions = {
