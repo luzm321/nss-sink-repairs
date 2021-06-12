@@ -4,6 +4,11 @@ import { sendRequest } from "./dataAccess.js";
 //database.json file via the POST fetch call/sendRequest() fxn as illustrated below:
 const mainContainer = document.querySelector("#container");
 
+// What this is doing is getting the input element who has a property of name and the value of name is service description
+// document.querySelector("input[name='serviceDescription']")
+// on a raw xpath this query would be like this: //input[@name='serviceDescription']
+//xpath is a query language for selecting elements in a webpage from an html or xml document, using brackets allows you to find an element
+//by using a specific property value of name in example below 
 mainContainer.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "submitRequest") {
         // Get what the user typed into the form fields
