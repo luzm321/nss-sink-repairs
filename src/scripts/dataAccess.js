@@ -45,8 +45,8 @@ export const sendRequest = (userServiceRequest) => {
         });
 };
 
-// Fetching HTTP DELETE Request: when using DELETE method on an HTTP request, you must identify a single resource(object via the id/primary key)
-//as an argument to avoid deleting an entire collection/array:
+// Fetching HTTP DELETE Request: when using DELETE method on an HTTP request to the API, you must identify a single resource
+//(object via the id/primary key) as an argument to avoid deleting an entire collection/array:
 
 export const deleteRequest = (id) => {
     return fetch(`${API}/requests/${id}`, { method: "DELETE" })
