@@ -1,34 +1,120 @@
 {
-  "plumbers": [],
-  "completions": [],
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
+    {
+      "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "requestId": "9",
+      "plumberId": "1",
+      "date_created": "6/15/2021",
+      "isCompleted": true,
+      "description": "Clogged toilet",
+      "requestedDate": "2021-06-18",
+      "plumber": "Maude",
+      "id": 1
+    },
+    {
+      "requestId": "7",
+      "plumberId": "2",
+      "date_created": "6/15/2021",
+      "isCompleted": true,
+      "description": "asdasd",
+      "requestedDate": "2021-06-16",
+      "plumber": "Merle",
+      "id": 2
+    },
+    {
+      "requestId": "1",
+      "plumberId": "1",
+      "date_created": "6/15/2021",
+      "isCompleted": true,
+      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
+      "requestedDate": "2021-08-27",
+      "plumber": "Maude",
+      "id": 3
+    },
+    {
+      "requestId": "2",
+      "plumberId": "2",
+      "date_created": "6/15/2021",
+      "isCompleted": true,
+      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
+      "requestedDate": "2021-06-21",
+      "plumber": "Merle",
+      "id": 4
+    }
+  ],
   "requests": [
     {
       "id": 1,
       "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
       "address": "34445 Bianka Ports",
       "budget": 400,
-      "neededBy": "2021-08-27"
+      "neededBy": "2021-08-27",
+      "isCompleted": true
     },
     {
       "id": 2,
       "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
       "address": "12345 Rice Avenue",
       "budget": 500,
-      "neededBy": "2021-06-21"
+      "neededBy": "2021-06-21",
+      "isCompleted": false
     },
     {
       "description": "Leaky bathtub faucet",
       "address": "1000 Infinity Way",
       "budget": "900.00",
       "neededBy": "2021-06-30",
-      "id": 4
+      "id": 4,
+      "isCompleted": false
     },
     {
       "description": "Kitchen Sink Leaks",
       "address": "1011 Forever Avenue",
       "budget": "350.00",
       "neededBy": "2021-06-17",
-      "id": 5
+      "id": 5,
+      "isCompleted": false
+    },
+    {
+      "description": "Restroom Sink Leaking",
+      "address": "2121 Flood Avenue",
+      "budget": "450",
+      "neededBy": "2021-07-18",
+      "id": 6,
+      "isCompleted": false
+    },
+    {
+      "description": "asdasd",
+      "address": "asdasd",
+      "budget": "123",
+      "neededBy": "2021-06-16",
+      "isCompleted": false,
+      "id": 7
+    },
+    {
+      "description": "Sink clogged",
+      "address": "nowhere",
+      "budget": "1000",
+      "neededBy": "2021-06-19",
+      "isCompleted": false,
+      "id": 8
+    },
+    {
+      "description": "Clogged toilet",
+      "address": "here",
+      "budget": "1",
+      "neededBy": "2021-06-18",
+      "isCompleted": false,
+      "id": 9
     }
   ]
 }
