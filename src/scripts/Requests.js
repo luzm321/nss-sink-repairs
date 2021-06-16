@@ -46,7 +46,7 @@ export const Requests = () => {
         return parseInt(a.date_created.split("-").join("")) - parseInt(b.date_created.split("-").join(""))
     });
 
-    //Then you map through the sortedReservations variable that contains the array of reservation objects that have been sorted chronologically:
+    //Then you map through the sortedRequests function that contains the array of request objects that have been sorted chronologically:
 
     let requestHTML = `<ul class="requests">
         ${sortedRequests().map(request => `<li>

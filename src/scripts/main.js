@@ -1,4 +1,4 @@
-import { fetchRequests, fetchPlumbers, fetchCompletions, deleteRequest } from "./dataAccess.js";
+import { fetchRequests, fetchPlumbers, fetchCompletions } from "./dataAccess.js";
 import { SinkRepair } from "./SinkRepair.js";
 
 
